@@ -63,14 +63,12 @@ spec:
           - name: "VAULT_PORT"
             value: "8200"           
           livenessProbe:
-            httpGet:
-              path: /health
+            tcpSocket:
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 3
           readinessProbe:
-            httpGet:
-              path: /health
+            tcpSocket:
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 3 
