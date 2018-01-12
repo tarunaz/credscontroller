@@ -11,7 +11,7 @@ import org.springframework.vault.annotation.VaultPropertySource;
 
 
 @SpringBootApplication
-//@VaultPropertySource("secret/spring-example")
+@ComponentScan("com.raffa")
 public class VaultDemoApplication {
 	
 	private Log log = LogFactory.getLog(VaultDemoApplication.class);
