@@ -8,11 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.vault.annotation.VaultPropertySource;
-import org.springframework.context.annotation.ComponentScan;
-
 
 @SpringBootApplication
-@ComponentScan(basePackageClasses = SecretController.class)
 public class VaultDemoApplication {
 	
 	private Log log = LogFactory.getLog(VaultDemoApplication.class);
